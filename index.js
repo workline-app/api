@@ -3,8 +3,8 @@ import app from './app/index.js';
 
 dotenv.config();
 
-const PORT = process.env.PORT || 8000;
+const port = process.env.PORT;
 
-app.listen(PORT, (req, res) =>
-  console.log(`🔥🔥🔥 LANDR is up and running on port ${PORT} 🔥🔥🔥\n`)
-);
+app.listen(port);
+
+console.log(`🔥🔥🔥 LANDR is up and running on port ${PORT} 🔥🔥🔥\n`);
